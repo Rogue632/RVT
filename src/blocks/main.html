@@ -1,0 +1,105 @@
+<main class="content">
+    <section class="content-lead">
+        <h1 class="hidden">Калькулятор ремонта</h1>
+        <p class="content-text">Воспользуйтесь нашим кальулятором, чтобы проссчитать примерную стоимость вашего ремонта. Калькулятор считает среднюю цену на основе прайсов всех предствленных в рейтинге компаний. Не стоит доверять компаниям, которые указывают цену от 1500 за квадратный метр...</p>
+    </section> 
+    <form action="#" class="form calculator">
+        <fieldset class="form__container">
+            <legend class="form__title">Калькулятор ремонта</legend>
+            <div class="form__row">
+                <label for="premises-type" class="form__subtitle">Тип помещения:<span class="text-red">*</span>
+                    <select name="premises-type" id="premises-type" class="form__item">
+                        <option value="6000" class="form__option">Новостройка</option>
+                        <option value="8500" class="form__option">Вторичка</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="yardage-value" class="form__subtitle">Площадь ремонта:<span class="text-red">*</span>
+                    <input type="text" name="yardage-value" id="yardage-value" placeholder="42 кв.м.">
+                </label>
+                <input type="range" name="yardage" id="yardage-range">
+            </div>
+            <div class="form__row">
+                <label for="electrician" class="form__subtitle">Электрика:<span class="text-red">*</span>
+                    <select name="electrician" id="electrician" class="form__item">
+                        <option value="1" class="form__option">Нет</option>
+                        <option value="300" class="form__option">Новая от вводного кабеля</option>
+                        <option value="600" class="form__option">Частичная замена и подключение</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="perimeter" class="form__subtitle">Общий периметр стен:<span class="text-red">*</span>
+                    <input type="text" name="perimeter" id="perimeter" class="form__item" placeholder="50 м">
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="repair-type" class="form__subtitle">Тип ремонта:<span class="text-red">*</span>
+                    <select name="repair-type" id="repair-type" class="form__item">
+                        <option value="0" class="form__option">Косметический</option>
+                        <option value="1500" class="form__option">Капитальный</option>
+                        <option value="3000" class="form__option">Дизайнерский</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="ceilings" class="form__subtitle">Потолки:<span class="text-red">*</span>
+                    <select name="ceilings" id="ceilings" class="form__item">
+                        <option value="1" class="form__option">Нет</option>
+                        <option value="300" class="form__option">Гипсокартон</option>
+                        <option value="450" class="form__option">Натяжной</option>
+                        <option value="600" class="form__option">2 уровня гипсокартон</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="bathroom" class="form__subtitle">Ремонт санузла:<span class="text-red">*</span>
+                    <select name="bathroom" id="bathroom" class="form__item">
+                        <option value="yes" class="form__option">Да</option>
+                        <option value="no" class="form__option">Нет</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="bathroom-area" class="form__subtitle">Площадь санузла:<span class="text-red">*</span>
+                    <input type="text" name="bathroom-area" id="bathroom-area" placeholder="42 кв.м.">
+                </label>
+                <input type="range" name="bathroom-area" id="bathroom-range">
+            </div>
+            <div class="form__row">
+                <label for="floor" class="form__subtitle">Теплые полы:<span class="text-red">*</span>
+                    <select name="floor" id="floor" class="form__item">
+                        <option value="yes" class="form__option">Да</option>
+                        <option value="no" class="form__option">Нет</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="doors" class="form__subtitle">Двери:<span class="text-red">*</span>
+                    <select name="doors" id="doors" class="form__item">
+                        <option value="yes" class="form__option">Да</option>
+                        <option value="no" class="form__option">Нет</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form__row">
+                <label for="entrance" class="form__subtitle">Входная дверь:<span class="text-red">*</span>
+                    <input type="checkbox" name="entrance" id="entrance">Да
+                </label>
+            </div>
+            <div class="form__row">
+                <p class="form__text">*Напоминаем, что это примерная стоимость</p>
+            </div>
+            <div class="form__row">
+                <div class="form__footer">
+                    <p class="form__footer-text">Стоимость вашего ремонта</p>
+                    <p class="form__footer-result">
+                        <span class="form__footer-result-title">Итого:</span>
+                        <span class="form__footer-totel">140 000 руб.</span>
+                    </p>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</main>

@@ -1,0 +1,20 @@
+.main-header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.logo {
+    width: 116px;
+}
+
+.logo__img {
+    width: 100%;
+}
+
+.menu__btn {
+    width: 32px;
+    height: 32px;
+    border-style: none;
+}
